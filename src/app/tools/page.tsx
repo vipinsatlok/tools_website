@@ -6,7 +6,7 @@ export default function page() {
     return (
         <div>
             {
-                data.map(tool => <Link href={`/tools/${tool.slug}`}>{tool.title}</Link>)
+                data.map(tool => <Link key={tool.slug} href={`/tools/${tool.slug}`}>{tool.title}</Link>)
             }
         </div>
     )
