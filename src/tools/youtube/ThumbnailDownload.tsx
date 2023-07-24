@@ -40,8 +40,8 @@ export default function YoutubeThumbnailDownload() {
     }
 
     return (
-        <div className="flex flex-col gap-5">
-            <div className="flex gap-5">
+        <div className="flex flex-col w-full gap-5">
+            <div className="flex flex-col gap-3 md:flex-row">
                 <Input onChange={onChange} name="url" placeholder="Enter Video Link" />
                 <Button onClick={getThumbnails} >{isLoading ? "Genrating.." : "Genrate"}</Button>
             </div>

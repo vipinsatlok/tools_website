@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`flex min-h-screen flex-col ${inter.className}`}>
         <Header />
-        <main className='flex-1 px-28'>
+        <main className='flex-1 px-3 md:px-28'>
           {children}
         </main>
         <Footer />
